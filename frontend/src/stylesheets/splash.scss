@@ -1,0 +1,143 @@
+.splash-back {
+    background-image: url(https://lairbnb-dev.s3.us-east-2.amazonaws.com/splash/Barad_dur.jpg);
+    min-width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.nav-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 3;
+}
+
+.fa-airbnb, .fa-biohazard {
+    font-size: 33px;
+    color: white;
+    transform: translate(0px, -2px);
+    margin-right: 20px;
+}
+
+.nav-session-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-session {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    height: 80px;
+    padding: 0px 10px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    &:hover {
+        border-bottom: 2px solid white;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.nav-splash {
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.nav-nonsplash {
+    // position: relative;
+    position: sticky !important;
+    top:0;
+    background-color: white;
+    border-bottom: 1px solid #e4e4e4;
+    .fa-airbnb, .fa-biohazard {
+        color: #FF5A5F;
+    }
+    .btn-session {
+        color: #484848;
+        &:hover {
+            border-bottom: 2px solid rgb(118,118,118);
+        }
+    }
+}
+
+.fa-search {
+    padding-top: 12px;
+    position: absolute;
+    left: 100px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search {
+    width: 450px;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    padding-left: 50px;
+    font-weight: 700;
+    @media screen and (max-width: $break-small) {
+        width: 100%
+    }
+}
+.nav-search:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 12px rgba(26, 26, 29, 0.08);
+}
+
+.profile-pic {
+    border-radius: 50%;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#user-dropdown {
+    position: absolute;
+    z-index: 2;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+    padding: 0 15px;
+    width: 290px;
+    top: 85px;
+    right: 10px;
+    background-color: white;
+    color: rgb(72,72,72);
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+.user-dropdown-lis {
+    padding: 20px 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(242,242,242);
+}
+.user-dropdown-lis:hover {
+    border-bottom: 1px solid rgb(118,118,118);
+}
+
+.hidden {
+    display: none;
+}
+
+.show-hidden {
+    display: block;
+}
+
