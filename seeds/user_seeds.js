@@ -25,25 +25,25 @@ const seedUsers = () => {
 
     userArray.push(
       new User({
-        username: "April Graves",
-        email: "ag@aol.com",
+        username: "Eric Tso",
+        email: "et@aol.com",
         image_url: "https://lairbnb-dev.s3.us-east-2.amazonaws.com/villains/april.jpeg",
         password: "password"
       })
     );
 
     userArray.push(
-      new User({
-        username: "Christie Brandao",
-        email: "cb@yahoo.com",
-        image_url: "https://lairbnb-dev.s3.us-east-2.amazonaws.com/villains/christie.jpeg",
-        password: "password"
-      })
-    );
+		new User({
+			username: 'Kevin Durant',
+			email: 'kd@yahoo.com',
+			image_url: 'https://lairbnb-dev.s3.us-east-2.amazonaws.com/villains/christie.jpeg',
+			password: 'password',
+		})
+	);
 
     userArray.push(
       new User({
-        username: "Charles Mancuso",
+        username: "Charles Mancusi",
         email: "cm@gmail.com",
         image_url: "https://lairbnb-dev.s3.us-east-2.amazonaws.com/villains/charles.jpeg",
         password: "password"
@@ -52,7 +52,7 @@ const seedUsers = () => {
 
     userArray.push(
       new User({
-        username: "Zachary Oliver",
+        username: "Alan Lopez",
         email: "zo@comcast.net",
         image_url: "https://lairbnb-dev.s3.us-east-2.amazonaws.com/villains/tornado+.jpg",
         password: "password"

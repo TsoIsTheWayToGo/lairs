@@ -9,10 +9,10 @@ const Lair = require('../models/Lair');
 const User = require('../models/User');
 const Review = require('../models/Review');
 const reviewersArray = [
-  'April Graves',
-  'Christie Brandao',
-  'Zachary Oliver',
-  'Charles Mancuso'
+  'Eric Tso',
+  'Kevin Durant',
+  'Alan Lopez',
+  'Charles Mancusi'
 ];
 
 const seedReviews = () => {
